@@ -12,7 +12,7 @@ public class HandleService implements ChannelAwareMessageListener {
     private static final Logger logger = LoggerFactory.getLogger(HandleService.class);
     @Override
     public void onMessage(Message message, Channel channel) throws Exception {
-      
+      //test comments
        logger.info( message.getMessageProperties().getConsumerQueue()+":"+new String(message.getBody()));
 
     }
